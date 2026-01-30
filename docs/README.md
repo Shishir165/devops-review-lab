@@ -1,3 +1,9 @@
+develop
+Configuration managed with Ansible
+
+Infrastructure managed with Terraform
+
+main
 # DevOps Review Lab
 
 This project contains infrastructure and configuration code for a sample AWS-based application.
@@ -13,3 +19,8 @@ This project contains infrastructure and configuration code for a sample AWS-bas
 - Terraform
 - Ansible
 - AWS CLI configured with credentials
+ develop
+
+
+
+ main
