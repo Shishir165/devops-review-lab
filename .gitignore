@@ -1,0 +1,27 @@
+#terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tvars
+*.backup
+
+#AWS credentials and keys
+.aws/
+*.pem
+*.key 
+credentials 
+config
+
+#Ansible vault
+.vault_pass
+vault_pass.txt
+*.retry
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE configurations
+.vscode/
+.idea/
+*.swp
