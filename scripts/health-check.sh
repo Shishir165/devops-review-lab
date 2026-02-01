@@ -1,35 +1,42 @@
 #!/bin/bash
+# Simple System Health Check Script (with color coding)
 
-echo "========SYSTEM HEALTH CHECK========"
+# Colors
+GREEN="\033[0;32m"
+YELLOW="\033[0;33m"
+RED="\033[0;31m"
+NC="\033[0m"   # No Color
+
+echo -e "${GREEN}===== SYSTEM HEALTH CHECK =====${NC}"
 echo
-	
-echo "CPU usage:"
+
+echo -e "${GREEN}CPU Usage:${NC}"
 top -bn1 | head -5
 echo
 
-echo "Memory usage:"
+echo -e "${GREEN}Memory Usage:${NC}"
 free -h
 echo
 
-echo "Disk space usage:"
+echo -e "${GREEN}Disk Usage:${NC}"
 df -h
 echo
 
-echo "Running processes count:"
+echo -e "${YELLOW}Running Processes Count:${NC}"
 ps aux | wc -l
 echo
 
-echo "Network Connections:"
+echo -e "${YELLOW}Network Connections:${NC}"
 ss -tun | head
 echo
 
-echo "Last 5 System Logins:"
+echo -e "${GREEN}Last 5 System Logins:${NC}"
 last -n 5
 echo
 
-echo "System Load Average:"
+echo -e "${GREEN}System Load Average:${NC}"
 uptime
 echo
 
-echo "===== HEALTH CHECK COMPLETE ====="
-	
+echo -e "${GREEN}===== HEALTH CHECK COMPLETE =====${NC}"
+

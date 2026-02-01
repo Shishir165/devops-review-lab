@@ -11,3 +11,10 @@ Run Ansible playbooks to configure EC2 instances.
 
 ## Step 4: Verify
 Access the web servers via their public IP addresses.
+
+### Elastic IP Assignment
+
+An Elastic IP was allocated and associated with the EC2 instance to provide
+a static public IP address. The assigned Elastic IP was documented and later
+released to avoid unnecessary AWS charges.
+

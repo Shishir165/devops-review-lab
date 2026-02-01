@@ -12,3 +12,8 @@ output "s3_bucket_name" {
   description = "S3 bucket name"
   value       = module.s3.bucket_name
 }
+
+output "ec2_public_ip" {
+  description = "Public IP of EC2"
+  value       = module.ec2.public_ip
+}

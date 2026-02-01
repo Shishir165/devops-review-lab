@@ -19,3 +19,11 @@ VPC
 - Two EC2 instances acting as web servers
 - S3 bucket for static assets
 - IAM roles and policies for secure access
+
+
+### S3 Bucket Configuration
+
+An S3 bucket was created with versioning, server-side encryption (SSE-S3), and
+public access fully blocked. Lifecycle policies transition objects to
+Standard-IA after 30 days, Glacier after 90 days, and delete after 180 days.
+Server access logging is enabled and sent to a separate logging bucket.
